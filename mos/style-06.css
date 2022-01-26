@@ -1,0 +1,19 @@
+* {
+  font-family: sans-serif
+}
+
+.grid {
+  margin: 0 auto;
+  min-width: 60rem;
+  gap: 1rem;
+  -moz-columns: 6;
+  columns: 6
+}
+
+.grid>* {
+  padding: 1rem;
+  background: hotpink;
+  margin-bottom: 1rem;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid
+}

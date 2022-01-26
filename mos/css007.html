@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   body {
+  background-color: #272527;
+}
+
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+/* Forma atual */
+.container {
+  column-count: 2;
+  column-gap: 10px;
+}
+
+/* Mansory - Nova forma */
+/* .container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr [box-start] 1fr 1fr [box-end] 1fr;
+  grid-template-rows: masonry;
+} */
+  </style>
+</head>
+<body>
+  <!-- https://codepen.io/klawdyo/pen/oNzyWro -->
+  <div class="container">
+    <figure>
+      <img src="https://assets.codepen.io/12005/windmill.jpg" alt="001 A windmill" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/suspension-bridge.jpg" alt="002 The Clifton Suspension Bridge" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/sunset.jpg" alt="003 Sunset and boats" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/snowy.jpg" alt="004 a river in the snow" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/bristol-balloons1.jpg" alt="005 a single checked balloon" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/dog-balloon.jpg" alt="006 a hot air balloon shaped like a dog" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/abq-balloons.jpg" alt="View from a hot air balloon of other balloons" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/disney-balloon.jpg" alt="a balloon fairground ride" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/bristol-harbor.jpg" alt="sunrise over a harbor" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/bristol-balloons2.jpg" alt="three hot air balloons in a blue sky" />
+    </figure>
+    <figure>
+      <img src="https://assets.codepen.io/12005/toronto.jpg" alt="the Toronto light up sign at night" />
+    </figure>
+  </div>
+</body>
+</html>

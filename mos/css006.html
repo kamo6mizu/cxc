@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+  font-family: sans-serif
+}
+
+.grid {
+  margin: 0 auto;
+  border: 2px solid #728;
+  padding: 1rem;
+  gap: 1rem;
+  -moz-columns: 2;
+  -webkit-columns: 2;
+  columns: 2;
+}
+
+.grid>* {
+  padding: 1rem;
+  background: hotpink;
+  margin-bottom: 1rem;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid
+}
+.grid>div:nth-child(2) {
+  order: 4;
+  background-color: aquamarine;
+}
+
+/*  */
+@media only screen and (max-width: 320px) {
+    .grid {
+      -moz-columns: 1;
+      -webkit-columns: 1;
+      columns: 1;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .grid {
+      -moz-columns: 2;
+      -webkit-columns: 2;
+      columns: 2;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .grid {
+      -moz-columns: 3;
+      -webkit-columns: 3;
+      columns: 3;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .grid {
+        -moz-columns: 4;
+        -webkit-columns: 4;
+        columns: 4;
+    }
+}
+  </style>
+</head>
+<body>
+  <!-- https://codepen.io/Vuurvos/pen/zYZjPMM -->
+  <!-- https://codepen.io/qq7886/pen/MypEvw -->
+  <div class="grid">
+    <div>
+      <h2>Title 01</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, porro!</p>
+    </div>
+    <div>
+      <h2>Title 02</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor est provident cumque, necessitatibus recusandae obcaecati minus quod ex praesentium molestiae nesciunt dolores ipsa eum natus magnam quidem repellat fugit expedita.</p>
+    </div>
+    <div>
+      <h2>Title 03</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eos itaque accusamus quos tenetur similique?</p>
+    </div>
+    <div>
+      <h2>Title 04</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi optio enim non aliquid rem. Explicabo excepturi laborum magni aut adipisci ipsum, beatae at dolore.</p>
+    </div>
+    <div>
+      <h2>Title 05</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, porro!</p>
+    </div>
+    <div>
+      <h2>Title 06</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deleniti adipisci quas nam tenetur, neque, ab enim debitis, unde asperiores nulla vero dignissimos blanditiis perspiciatis id aliquid ad temporibus accusamus! Veniam consequatur sunt impedit nisi.</p>
+    </div>
+    
+  </div>
+</body>
+</html>

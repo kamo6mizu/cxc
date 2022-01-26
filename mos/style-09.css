@@ -1,0 +1,96 @@
+body {
+  background: #333;
+  padding: 20px 25px
+}
+
+.columns-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-flow: wrap
+}
+
+.image-responsive,
+.content-posts .grid-blog .blog a img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  width: 100%
+}
+
+.content-posts {
+  width: 100%
+}
+
+.content-posts .grid-blog {
+  -moz-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-height: 2000px;
+  width: 100%
+}
+
+.content-posts .grid-blog .blog {
+  transition: all .5s;
+  background: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);
+  margin: 0 15px 30px;
+  padding: 0;
+  width: calc(100%/3.2)
+}
+
+.content-posts .grid-blog .blog a {
+  transition: all .5s;
+  background: #7c4dff;
+  display: block;
+  text-decoration: none
+}
+
+.content-posts .grid-blog .blog a img {
+  max-width: 500px;
+  transition: all .5s
+}
+
+.content-posts .grid-blog .blog a .title-post {
+  transition: all .5s;
+  background: #00bcd4;
+  padding: 20px 20px 10px
+}
+
+.content-posts .grid-blog .blog a .title-post h2 {
+  font: 600 1.5em "Helvetica";
+  color: #fff;
+  margin: 0 0 10px
+}
+
+.content-posts .grid-blog .blog a .title-post p {
+  font: 400 .9em "Helvetica";
+  color: #eee
+}
+
+.content-posts .grid-blog .blog a .post-exerpt {
+  background: #fff;
+  padding: 20px
+}
+
+.content-posts .grid-blog .blog a .post-exerpt p {
+  font: 400 1em "Helvetica";
+  color: #333;
+  margin: 0
+}
+
+.content-posts .grid-blog .blog:hover {
+  transition: all .5s;
+  box-shadow: 0px 10px 25px 2px rgba(0, 0, 0, .7)
+}
+
+.content-posts .grid-blog .blog:hover a {
+  transition: all .5s
+}
+
+.content-posts .grid-blog .blog:hover a .title-post {
+  transition: all .5s;
+  background: #455a64
+}

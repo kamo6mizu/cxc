@@ -1,0 +1,48 @@
+body {
+  background-color: #3bab87;
+}
+
+main > * {
+  break-inside: avoid;
+}
+
+main {
+  display: column;
+  columns: 4;
+  padding: 2rem;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 80rem;
+  min-height: 100vh;
+
+  @supports (grid-template-rows: masonry) {
+    .main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: masonry;
+      align-items: start;
+      align-tracks: stretch;
+    }
+  }
+
+  .card {
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 3em rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+
+    &__title {
+      color: #3bab87;
+      font-weight: 500;
+    }
+
+    &__text {
+      line-height: 1.5;
+
+      > a {
+        color: #3bab87;
+      }
+    }
+  }
+}

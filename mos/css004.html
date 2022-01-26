@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+  background-color: #3bab87
+}
+
+main>* {
+  -moz-column-break-inside: avoid;
+  break-inside: avoid
+}
+
+main {
+  display: column;
+  -moz-columns: 4;
+  columns: 2;
+  padding: 2rem;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 80rem;
+  min-height: 100vh
+}
+
+@supports(grid-template-rows: masonry) {
+  main .main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: masonry;
+    align-items: start;
+    align-tracks: stretch
+  }
+}
+
+main .card {
+  padding: .5rem 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 3em rgba(0, 0, 0, .15);
+  border-radius: 5px;
+  margin-bottom: 1rem
+}
+
+main .card__title {
+  color: #3bab87;
+  font-weight: 500
+}
+
+main .card__text {
+  line-height: 1.5
+}
+
+main .card__text>a {
+  color: #3bab87
+}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h2 class="card__title">Title 01</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+    </div>
+    
+    <div class="card">
+      <h2 class="card__title">Title 02</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur. adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil,</a></p>
+    </div>
+  
+    <div class="card">
+      <h2 class="card__title">Title 03</h2>
+      <p class="card__text">Lorem ipsum dolor, adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+    </div>
+  
+    <div class="card">
+      <h2 class="card__title">Title 04</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a></p>
+    </div>
+  
+    <div class="card">
+      <h2 class="card__title">Title 05</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum. Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+    </div>
+  
+    <div class="card">
+      <h2 class="card__title">Title 06</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+    </div>
+  
+    <div class="card">
+      <h2 class="card__title">Title 07</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+    </div>
+  
+    <!-- <div class="card">
+      <h2 class="card__title">Title</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.
+        Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+    </div>
+  
+    <div class="card">
+      <h2 class="card__title">Title</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a></p>
+    </div>
+  
+    <div class="card">
+      <h2 class="card__title">Title</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+    </div>
+  
+    <div class="card">
+      <h2 class="card__title">Title</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a></p>
+    </div>
+  
+    <div class="card">
+      <h2 class="card__title">Title</h2>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil,</p>
+    </div>
+    
+      <div class="card">
+      <h2 class="card__title">Title</h2>
+      <p class="card__text">Lorem ipsum dolor, adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+      <p class="card__text">Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet. Itaque veritatis qui labore quia odio nihil, magni soluta facilis necessitatibus cumque repellendus optio laborum.</p>
+    </div> -->
+  </main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+ body {
+  background: #333;
+  padding: 20px 25px
+}
+
+.columns-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-flow: wrap
+}
+
+.image-responsive,
+.content-posts .grid-blog .blog a img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  width: 100%
+}
+
+.content-posts {
+  width: 100%
+}
+
+.content-posts .grid-blog {
+  -moz-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-height: 2000px;
+  width: 100%;
+}
+
+.content-posts .grid-blog .blog {
+  transition: all .5s;
+  background: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);
+  margin: 0 15px 30px;
+  padding: 0;
+  width: calc(100%/3.2);
+}
+
+  </style>
+</head>
+<body>
+  <!-- https://codepen.io/JohnatanMaciel/pen/MKVyxg -->
+  <h1>Mansory Layout with <span class="highlight">Flexbox</span></h1>
+  <div class="content-posts">
+<div class="columns-wrap grid-blog">
+  <div class="post-card blog" style="height: 140px">01</div>
+  <div class="post-card blog" style="height: 190px">02</div>
+  <div class="post-card blog" style="height: 120px">03</div>
+  <div class="post-card blog" style="height: 190px">04</div>
+  <div class="post-card blog" style="height: 170px">05</div>
+  <div class="post-card blog" style="height: 120px">06</div>
+  <div class="post-card blog" style="height: 250px">07</div>
+  <div class="post-card blog" style="height: 190px">08</div>
+  <div class="post-card blog" style="height: 190px">09</div>
+  <div class="post-card blog" style="height: 120px">10</div>
+  <div class="post-card blog" style="height: 190px">12</div>
+  <div class="post-card blog" style="height: 290px">13</div>
+  <div class="post-card blog" style="height: 190px">14</div>
+  <div class="post-card blog" style="height: 130px">15</div>
+  <div class="post-card blog" style="height: 190px">16</div>
+  <div class="post-card blog" style="height: 120px">17</div>
+  <div class="post-card blog" style="height: 150px">18</div>  
+</div>
+</div>
+</body>
+</html>

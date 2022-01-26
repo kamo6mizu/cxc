@@ -1,0 +1,28 @@
+* {
+  font-family: sans-serif;
+}
+
+.grid {
+  margin: 0 auto;
+  min-width: 60rem;
+
+  // display: column;
+  gap: 1rem;
+  columns: 6;
+
+  & > * {
+    padding: 1rem;
+    background: hotpink;
+
+    margin-bottom: 1rem;
+
+    break-inside: avoid;
+  }
+}
+
+@supports (grid-template-rows: masonry) {
+  // display: grid;
+  // gap: 1rem;
+  // grid-template-columns: repeat(6, 1fr);
+  // grid-template-rows: masonry;
+}

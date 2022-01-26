@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    div{
+      break-inside: avoid;
+    }
+    .grid {
+      margin: 50px auto;
+      max-width: 60rem;
+      padding: 20px;
+      background-color: #e3fafc;
+      border: 1px solid #99e9f2;
+
+      /* display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: masonry;
+      -webkit-grid-template-rows: masonry;
+      gap: .5rem; */
+
+      display: grid;
+      gap: 10px;
+      /* grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); */
+       /* 自適 寬度 最小 120px */
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: masonry;
+      align-items: start;
+      align-tracks: stretch;
+    }
+   
+    .grid>* {
+      height: auto;
+      break-inside: avoid;        
+    }
+    .item{
+      border: 1px solid #3bc9db;
+      border-radius: 3px;
+      background-color: #99e9f2;
+      font-size: 250%;
+      color: #fff;
+      padding: 0 .4rem;
+    }
+    .grid .item p{
+      font-size: 12px;
+      color: rgba(0,0,0,.7);        
+    }
+
+      /* @supports (grid-template-rows: masonry) {
+      grid-template-rows: masonry;
+      align-items: start;
+      align-tracks: stretch;
+
+      .grid>* {
+        height: auto;
+      }
+    } */
+      /* .grid>div:nth-child(1) {
+        height: 200px;
+      }
+
+      .grid>div:nth-child(2) {
+        height: 60px;
+      }
+
+      .grid>div:nth-child(3) {
+        height: 130px;
+      }
+
+      .grid>div:nth-child(4) {
+        height: 170px;
+      }
+
+      .grid>div:nth-child(5) {
+        height: 100px;
+      }
+
+      .grid>div:nth-child(6) {
+        height: 110px;
+      }
+
+      .grid>div:nth-child(6) {
+        height: 160px;
+      } */
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <!-- https://www.youtube.com/watch?v=KrPz_wmBsAE&list=RDCMUCJZv4d5rbIKd4QHMPkcABCw&start_radio=1&rv=KrPz_wmBsAE&t=789 
+    https://codepen.io/levente-frks/pen/ExNEbxz
+    https://codepen.io/kevinpowell/pen/yLaYxab
+   -->
+    <div class="item">1
+      <p>Note: You can use any of the values used for align-content for align-tracks and justify-tracks. 
+        There are some nice examples in the spec of different combinations.
+        If you set align-tracks: stretch, then any auto-sized items in the layout will stretch. 
+        The masonry effect is retained, but anything with a definite size on that axis will not be stretched out of shape.
+      </p>
+    </div>
+    <div class="item">2
+      <p>
+        的過就由例助的定則信再制一視什於……一體高數強費海關月！獲而的……器怎產：聲風緊解創而西科是初多是麼個奇養運，
+        的北過這生、天活臺作在國……教日馬三政次，母亞它和刻有毛來長易大走黃治點球的或當坐轉小取：益天眾成建品下多的力！
+        投主讓的見。在我務黨影入北第流一資邊。務有師愛地？金結是……強上生走有皮了物從大腦去，全變蘭，來工的大機球要立市高情，
+        前體展間看發演求裡答時各男視空軍東法程自次吸。
+      </p>
+    </div>
+    <div class="item">3
+      <p>
+       投主讓的見。
+        在我務黨影入北第流一資邊。務有師愛地？金結是……強上生走有皮了物從大腦去，全變蘭，來工的大機球要立市高情，
+        前體展間看發演求裡答時各男視空軍東法程自次吸。
+      </p>
+    </div>
+    <div class="item">4
+      <p>
+        的過就由例助的定則信再制一視什於……一體高數強費海關月！獲而的……器怎產：聲風緊解創而西科是初多是麼個奇養運，
+      </p>
+    </div>
+    <div class="item">5
+      <p>Note: You can use any of the values used for align-content for align-tracks and justify-tracks. 
+        There are some nice examples in the spec of different combinations.
+        If you set align-tracks: stretch, then any auto-sized items in the layout will stretch. 
+        The masonry effect is retained, but anything with a definite size on that axis will not be stretched out of shape.
+      </p>
+    </div>
+    <div class="item">6
+      <p>
+        的過就由例助的定則信再制一視什於……一體高數強費海關月！獲而的……器怎產：聲風緊解創而西科是初多是麼個奇養運，
+      </p>
+    </div>
+    <div class="item">7
+      <p>
+        投主讓的見。
+         在我務黨影入北第流一資邊。務有師愛地？金結是……強上生走有皮了物從大腦去，全變蘭，來工的大機球要立市高情，
+         前體展間看發演求裡答時各男視空軍東法程自次吸。
+       </p>
+    </div>
+  </div>
+</body>
+</html>

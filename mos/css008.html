@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  padding: 100px;
+  font-family: 'Cabin', sans-serif;
+}
+.highlight{
+  color: #ff4e4edb;
+}
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px;
+/*   align-content: space-around; */
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  height: 1500px;
+}
+.item{
+  border-radius: 3px;
+  background-color: #A2CBFA;
+  border: 1px solid #4390E1;
+  
+  width: 32%;
+  margin-bottom: 2%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+/* Reoder items into rows */
+.item:nth-child(3n+1)  {
+  order: 1;
+}
+.item:nth-child(3n+2)  {
+  order: 2;
+}
+.item:nth-child(3n)  {
+  order: 3;
+}
+
+/* Force New column with psuedo element  */
+/* Force new columns */
+.container::before,
+.container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 10px;
+  order: 2;
+}
+  </style>
+</head>
+<body>
+  <!-- https://codepen.io/emeraldy/pen/abyezLx -->
+  <!-- https://codepen.io/imas-nevilyta/pen/MWgmYLL -->
+  <h1>Mansory Layout with <span class="highlight">Flexbox</span></h1>
+<div class="container">
+  <div class="item" style="height: 140px">01</div>
+  <div class="item" style="height: 190px">02</div>
+  <div class="item" style="height: 120px">03</div>
+  <div class="item" style="height: 190px">04</div>
+  <div class="item" style="height: 170px">05</div>
+  <div class="item" style="height: 120px">06</div>
+  <div class="item" style="height: 250px">07</div>
+  <div class="item" style="height: 190px">08</div>
+  <div class="item" style="height: 190px">09</div>
+  <div class="item" style="height: 120px">10</div>
+  <div class="item" style="height: 190px">12</div>
+  <div class="item" style="height: 290px">13</div>
+  <div class="item" style="height: 190px">14</div>
+  <div class="item" style="height: 130px">15</div>
+  <div class="item" style="height: 190px">16</div>
+  <div class="item" style="height: 120px">17</div>
+  <div class="item" style="height: 150px">18</div>  
+</div>
+</body>
+</html>
